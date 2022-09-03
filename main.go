@@ -23,9 +23,13 @@ func main() {
 		WindowPositionWidth:  400,
 		WindowPositionHeight: 200,
 		ChromeExecPath:       "", // execPath,
-		BrowserRunPath:       "",
-		UseHttpServer:        false,
-		HttpPort:             0,
+		BrowserRunPath: goChrome.Platform{
+			Linux:   "",
+			Windows: "",
+			Darwin:  "",
+		},
+		UseHttpServer: false,
+		HttpPort:      0,
 		HttpRoute: map[string]func(http.ResponseWriter, *http.Request){
 			"page": func(writer http.ResponseWriter, request *http.Request) {
 				gc.GoHttp.View(writer, request, "page", map[string]interface{}{
