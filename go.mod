@@ -1,4 +1,4 @@
-module go-chrome-demo
+module github.com/mygithub-hang/go-chrome-demo
 
 go 1.17
 
