@@ -1,0 +1,21 @@
+{
+    "name": "go-chrome-demo",
+    "chrome_exec_path": "/Users/yuanhang/Desktop/chrome-mac/Chromium.app/Contents/MacOS/Chromium",
+    "integrated_browser": true,
+    "chrome_pack_path": {
+        "linux": "",
+        "windows": "/Users/yuanhang/Desktop/chrome-win.zip",
+        "darwin": "/Users/yuanhang/Desktop/chrome-mac.zip"
+    },
+    "chrome_version": {
+        "linux": "",
+        "windows": "",
+        "darwin": ""
+    },
+    "build_cache_path": "",
+    "icons": {
+        "linux": "resources/icons/icon.png",
+        "windows": "resources/icons/icon.ico",
+        "darwin": "resources/icons/icon.icns"
+    }
+}

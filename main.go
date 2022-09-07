@@ -4,43 +4,27 @@ import (
 	"fmt"
 	"github.com/chromedp/cdproto/network"
 	"github.com/chromedp/chromedp"
-	goChrome "github.com/mygithub-hang/go-chrome"
-	"net/http"
+	goChrome "github.com/voyager-hang/go-chrome"
 )
 
 const indexURL = "index"
-
-//const execPath = "/Volumes/Project/goProjects/goChrome/browser/chrome-mac/Chromium.app/Contents/MacOS/Chromium"
 
 var gc *goChrome.GoChrome
 
 func main() {
 	gc = goChrome.Create(indexURL, goChrome.GoChromeOptions{
+		AppName:              "go_chrome_demo",
 		CliModule:            false,
 		AppModule:            false,
 		WindowWidth:          500,
 		WindowHeight:         500,
 		WindowPositionWidth:  400,
 		WindowPositionHeight: 200,
-		ChromeExecPath:       "", // execPath,
-		BrowserRunPath: goChrome.Platform{
-			Linux:   "",
-			Windows: "",
-			Darwin:  "",
-		},
-		UseHttpServer: false,
-		HttpPort:      0,
-		HttpRoute: map[string]func(http.ResponseWriter, *http.Request){
-			"page": func(writer http.ResponseWriter, request *http.Request) {
-				gc.GoHttp.View(writer, request, "page", map[string]interface{}{
-					"title": "Title",
-				})
-			},
-		},
-		DefHttpIndexData: map[string]interface{}{
-			"title":   "标题",
-			"content": "content",
-		},
+		UseHttpServer:        true,
+		HttpRoute:            nil,
+		HttpPort:             0,
+		AssetFile:            AssetFile(),
+		RestoreAssets:        RestoreAssets,
 	})
 	// 绑定方法映射到js
 	_ = gc.Bind("sss", Aaa)
