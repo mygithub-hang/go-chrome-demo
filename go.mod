@@ -5,7 +5,7 @@ go 1.17
 require (
 	github.com/chromedp/cdproto v0.0.0-20220901095120-1a01299a2163
 	github.com/chromedp/chromedp v0.8.5
-	github.com/voyager-hang/go-chrome v1.1.0
+	github.com/voyager-hang/go-chrome v1.1.3
 )
 
 require (
