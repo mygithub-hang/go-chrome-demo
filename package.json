@@ -1,7 +1,7 @@
 {
     "name": "go-chrome-demo",
     "chrome_exec_path": "",
-    "integrated_browser": false,
+    "integrated_browser": true,
     "chrome_pack_path": {
         "linux": "",
         "windows": "D:\\Users\\user_name\\Desktop\\chrome-win.zip",
