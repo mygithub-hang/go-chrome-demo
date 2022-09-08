@@ -4,7 +4,7 @@
     "integrated_browser": false,
     "chrome_pack_path": {
         "linux": "",
-        "windows": "D:\Users\user_name\Desktop\chrome-win.zip",
+        "windows": "D:\\Users\\user_name\\Desktop\\chrome-win.zip",
         "darwin": "/Users/user_name/Desktop/chrome-mac.zip"
     },
     "chrome_version": {
