@@ -23,8 +23,8 @@ func main() {
 		UseHttpServer:        true,
 		HttpRoute:            nil,
 		HttpPort:             0,
-		AssetFile:            AssetFile(),
-		RestoreAssets:        RestoreAssets,
+// 		AssetFile:            AssetFile(),
+// 		RestoreAssets:        RestoreAssets,
 	})
 	// 绑定方法映射到js
 	_ = gc.Bind("sss", Aaa)
