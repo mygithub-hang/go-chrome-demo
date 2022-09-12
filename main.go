@@ -15,7 +15,7 @@ func main() {
 	gc = goChrome.Create(indexURL, goChrome.GoChromeOptions{
 		AppName:              "go_chrome_demo",
 		CliModule:            false,
-		AppModule:            false,
+		AppModule:            true,
 		WindowWidth:          500,
 		WindowHeight:         500,
 		WindowPositionWidth:  400,

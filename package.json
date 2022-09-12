@@ -1,11 +1,11 @@
 {
     "name": "go-chrome-demo",
-    "chrome_exec_path": "/Users/yuanhang/Desktop/chrome-mac/Chromium.app/Contents/MacOS/Chromium",
+    "chrome_exec_path": "",
     "integrated_browser": true,
     "chrome_pack_path": {
         "linux": "",
-        "windows": "/Users/yuanhang/Desktop/chrome-win.zip",
-        "darwin": "/Users/yuanhang/Desktop/chrome-mac.zip"
+        "windows": "D:\\Users\\user_name\\Desktop\\chrome-win.zip",
+        "darwin": "/Users/user_name/Desktop/chrome-mac.zip"
     },
     "chrome_version": {
         "linux": "",
