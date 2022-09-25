@@ -3,19 +3,22 @@
     "chrome_exec_path": "",
     "integrated_browser": true,
     "chrome_pack_path": {
-        "linux": "",
-        "windows": "D:\\Users\\user_name\\Desktop\\chrome-win.zip",
-        "darwin": "/Users/user_name/Desktop/chrome-mac.zip"
+        "linux": "/Volumes/Project/goProjects/go-chrome-demo/browser/Linux_x64/chrome-linux.zip",
+        "windows64": "/Volumes/Project/goProjects/go-chrome-demo/browser/Win_x64/chrome-win.zip",
+        "windows": "/Volumes/Project/goProjects/go-chrome-demo/browser/Win/chrome-win.zip",
+        "darwin": "/Volumes/Project/goProjects/go-chrome-demo/browser/Mac/chrome-mac.zip",
+        "darwin_arm": "/Volumes/Project/goProjects/go-chrome-demo/browser/Mac_Arm/chrome-mac.zip"
     },
     "chrome_version": {
         "linux": "",
         "windows": "",
         "darwin": ""
     },
-    "build_cache_path": "",
     "icons": {
         "linux": "resources/icons/icon.png",
         "windows": "resources/icons/icon.ico",
         "darwin": "resources/icons/icon.icns"
-    }
+    },
+    "windows_arch": "amd64",
+    "darwin_apple_chip": false
 }

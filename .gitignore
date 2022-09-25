@@ -16,3 +16,9 @@
 .idea
 
 browser
+
+windows_build.go
+
+darwin_build.go
+
+linux_build.go
